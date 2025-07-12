@@ -796,7 +796,7 @@ if submit:
                 for fac in career_top_faculties.get(career_name, []):
                     ci, ct = st.columns([1, 4])
                     with ci:
-                        st.image(fac['img'], height=120)
+                        st.image(fac['img'], width=150)
                     with ct:
                         st.markdown(
                             f"[{fac['name']}]({fac['url']}) - "
