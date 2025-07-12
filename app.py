@@ -756,14 +756,14 @@ if submit:
         scores.append((score, career_name))
     # Sortează carierele descrescător după scor
     scores.sort(reverse=True, key=lambda x: x[0])
-    # Selectează primele 2 opțiuni (cele mai potrivite)
-    for sc, career_name in scores[:2]:
+    # Selectează primele 25 opțiuni (cele mai potrivite)
+    for sc, career_name in scores[:5]:
         suggestions.append(career_name)
-        if len(suggestions) >= 2:
+        if len(suggestions) >= 5:
             break
     # Elimină dublurile (dacă cariera preferată apărea și în top scor)
     suggestions = list(dict.fromkeys(suggestions))
-    suggestions = suggestions[:2]
+    suggestions = suggestions[:5]
 
     # Afișează recomandările dacă există
     if suggestions:
@@ -805,7 +805,7 @@ if submit:
                         st.image(fac['img'], width=100)
                     with ct:
                         st.markdown(
-                            f"**[{fac['name']}]({fac['url']})**"
+                            f"[{fac['name']}]({fac['url']}) "
                             f"Locul în clasament: {fac['rank']}"
                             f"{fac['desc']}"
                         )
