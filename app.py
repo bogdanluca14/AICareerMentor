@@ -796,11 +796,11 @@ if submit:
                 for fac in career_top_faculties.get(career_name, []):
                     ci, ct = st.columns([1, 4])
                     with ci:
-                        st.image(fac['img'], width=100)
+                        st.image(fac['img'], height=120)
                     with ct:
                         st.markdown(
-                            f"[{fac['name']}]({fac['url']})"
-                            f"Locul în clasament: {fac['rank']}"
+                            f"[{fac['name']}]({fac['url']}) - "
+                            f"Locul în clasament: {fac['rank']}\n"
                             f"{fac['desc']}"
                         )
                 st.markdown("---")
@@ -810,7 +810,7 @@ if submit:
         advice_pool.append("Crede în tine! Continuă să lucrezi cu încredere pe drumul ales.")
         if len(favorite_subjects) >= 2:
             sbj = ", ".join(favorite_subjects[:2])
-            advice_pool.append(f"Faptul că îți plac {sbj} îți deschide perspective unice în cariera ta.")
+            advice_pool.append(f"Faptul că îți plac aceste materii îți deschide perspective unice în cariera ta.")
         if people_level >= 8:
             advice_pool.append("Empatia ta este un atu valoros în orice profesie.")
         if creativity_level >= 8:
