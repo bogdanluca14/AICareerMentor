@@ -990,7 +990,7 @@ study_years = {
 # Pentru celelalte cariere care nu apar aici, vom considera implicit 4 ani (o licență)
 
 # Formular de introducere a datelor utilizatorului
-with st.form("input_form"):
+with st.form("input_form")
     favorite_subjects = st.multiselect("Materii favorite (de preferat cel puțin două):", options=subjects_list)
     work_mode = st.radio("Preferi să lucrezi:", ["Individual", "În echipă", "Ambele"], index=2)
     creativity_level = st.slider("Creativitate (0-10):", 0, 10, 5)
