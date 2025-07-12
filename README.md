@@ -12,7 +12,7 @@
 1. **Selecție personalizată de materii**  
    Alegi materiile favorite și prioritățile tale (creativitate, empatie, spirit de lider), iar algoritmul le ia în calcul pentru potrivirea cu diverse cariere.  
 
-2. **Portabilitate extinsă**
+2. **Portabilitate extinsă**  
    Adaptat atât pentru desktop, cât și pentru telefon și tableta, fiind disponibil pe toate device-urile.
 
 3. **Recomandări AI “on-the-fly”**  
