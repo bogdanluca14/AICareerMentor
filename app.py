@@ -782,7 +782,7 @@ if submit:
             options=top5,
             index=0,
             help="Alege unul dintre primele 5 joburi recomandate",
-            label_visibility='collapsed
+            label_visibility='collapsed'
         )
 
         # Afișăm expandere pentru fiecare din top5, dar în layout vertical
