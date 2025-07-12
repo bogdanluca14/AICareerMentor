@@ -13,7 +13,7 @@
    Alegi materiile favorite și prioritățile tale (creativitate, empatie, spirit de lider), iar algoritmul le ia în calcul pentru potrivirea cu diverse cariere.  
 
 2. **Portabilitate extinsă**  
-   Adaptat atât pentru desktop, cât și pentru telefon și tableta, fiind disponibil pe toate device-urile.
+   Adaptat atât pentru desktop, cât și pentru telefon sau tableta, fiind disponibil pe toate device-urile.
 
 3. **Recomandări AI “on-the-fly”**  
    Folosește **Streamlit** pentru a genera rapid (în doar câteva secunde) topul a până la 5 cariere care se potrivesc cel mai bine profilului tău.
