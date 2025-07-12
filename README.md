@@ -1,5 +1,5 @@
 ## Link către site: https://aicareermentor.streamlit.app/
-[![Launch App](https://img.shields.io/badge/🔗-Link-ul%20Aplicatiei-blue)](https://aicareermentor.streamlit.app/)
+[![Launch App](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC0erbb-cRqj-kfoWPCiKZEGu0f5-AXGiwXA&s)](https://aicareermentor.streamlit.app/)
 
 ## 🎓 Mentor Carieră AI
 
