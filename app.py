@@ -645,6 +645,7 @@ study_years = {
     "Medic": 10,
     "Cercetător": 8,
     "Veterinar": 6,
+    "Polițist": 4
     "Arhitect": 6,
     "Farmacist": 5,
     "Jurist": 5
