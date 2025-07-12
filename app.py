@@ -778,7 +778,7 @@ if submit:
         # Dropdown cu primele 5 cariere recomandate
         top5 = suggestions[:5]
         selected = st.selectbox(
-            "Selectează un job pentru detalii:",
+            "",  # eliminăm eticheta
             options=top5,
             index=0,
             help="Alege unul dintre primele 5 joburi recomandate"
@@ -805,7 +805,7 @@ if submit:
                         st.image(fac['img'], width=100)
                     with ct:
                         st.markdown(
-                            f"[{fac['name']}]({fac['url']}) "
+                            f"[{fac['name']}]({fac['url']})"
                             f"Locul în clasament: {fac['rank']}"
                             f"{fac['desc']}"
                         )
@@ -842,5 +842,3 @@ if submit:
         )
     else:
         st.markdown("**Nu s-au găsit recomandări** pe baza datelor introduse. Încearcă alte combinații de opțiuni!", unsafe_allow_html=True)
-
-
