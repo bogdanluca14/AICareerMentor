@@ -805,10 +805,8 @@ if submit:
                         st.image(fac['img'], width=100)
                     with ct:
                         st.markdown(
-                            f"**[{fac['name']}]({fac['url']})**  
-    "
-                            f"Locul în clasament: {fac['rank']}  
-    "
+                            f"**[{fac['name']}]({fac['url']})**"
+                            f"Locul în clasament: {fac['rank']}"
                             f"{fac['desc']}"
                         )
                 st.markdown("---")
