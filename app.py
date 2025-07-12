@@ -940,7 +940,7 @@ career_top_faculties = {
             "name": "Universitatea Politehnica din București Facultatea de Automatică și Calculatoare",
             "rank": "Top 1 Data Science în România",
             "url": "https://www.acs.pub.ro",
-            "img": "https://cdn.slidesharecdn.com/ss_thumbnails/brosura2011-2012v15-1-111122104829-phpapp02-thumbnail.jpg",
+            "img": "https://upb.ro/wp-content/uploads/2018/04/precis-upb.jpg",
             "lat": 44.43833,
             "lon": 26.05139,
             "desc": "Specializări în inteligență artificială, big data și machine learning."  # 
