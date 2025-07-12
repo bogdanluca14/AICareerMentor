@@ -767,8 +767,7 @@ if submit:
 
     # Afișează recomandările dacă există
     if suggestions:
-        st.markdown("## 🔍 Mentorul AI ți-a recomandat următoarele cariere. Alege din dropdown și vezi detalii!", unsafe_allow_html=True)
-        # Iconițe pentru fiecare carieră
+        st.markdown("## 🔍 Mentorul AI ți-a recomandat următoarele cariere. Alege din dropdown și explorează detaliile fiecăreia!", unsafe_allow_html=True)
         career_icons = {
             "Programator": "🚀", "Medic": "🩺", "Inginer": "⚙️", "Profesor": "📚", "Cercetător": "🔬",
             "Artist": "🎨", "Muzician": "🎵", "Avocat": "⚖️", "Jurnalist": "📰", "Economist": "💼",
@@ -785,72 +784,66 @@ if submit:
             help="Alege unul dintre primele 5 joburi recomandate"
         )
 
-        # Coloane pentru afișare side-by-side a primelor 2 expandere
-        cols = st.columns(2)
-        for idx, career_name in enumerate(top5[:2]):
-            with cols[idx]:
-                info = career_data[career_name]
-                icon = career_icons.get(career_name, "🖋️")
-                # Expander care se deschide doar dacă e selectat
-                with st.expander(f"{icon} {info['title']}", expanded=(career_name == selected)):
-                    # Motiv de potrivire
-                    reason = info['reason']
-                    # Personalizări suplimentare de motiv
-                    if info.get('subjects'):
-                        common = set(favorite_subjects) & set(info['subjects'])
-                        if common:
-                            if career_name == "Programator":
-                                reason = "ai pasiune pentru informatică și gândire logică"
-                            elif career_name == "Medic":
-                                reason = "îți pasă de oameni și ești atras de științele vieții"
-                    st.markdown(f"**De ce ți se potrivește:** {reason.capitalize()}.")
+        # Afișăm expandere pentru fiecare din top5, dar în layout vertical
+        for career_name in top5:
+            info = career_data[career_name]
+            icon = career_icons.get(career_name, "🖋️")
+            exp = st.expander(f"{icon} {info['title']}", expanded=(career_name == selected))
+            with exp:
+                # Motiv de potrivire
+                reason = info['reason'].capitalize()
+                st.markdown(f"**De ce ți se potrivește:** {reason}.")
+                # Pași concreți
+                st.markdown("**Pași concreți pentru a ajunge aici:**")
+                for i, step in enumerate(info['steps'], 1):
+                    st.markdown(f"{i}. {step}")
+                # Facultăți top
+                st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
+                for fac in career_top_faculties.get(career_name, []):
+                    ci, ct = st.columns([1, 4])
+                    with ci:
+                        st.image(fac['img'], width=100)
+                    with ct:
+                        st.markdown(
+                            f"**[{fac['name']}]({fac['url']})**  
+    "
+                            f"Locul în clasament: {fac['rank']}  
+    "
+                            f"{fac['desc']}"
+                        )
+                st.markdown("---")
 
-                    # Pași concreți
-                    st.markdown("**Pași concreți pentru a ajunge aici:**")
-                    for i, step in enumerate(info['steps'], 1):
-                        st.markdown(f"{i}. {step}")
-
-                    # Facultăți de top
-                    st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
-                    for fac in career_top_faculties.get(career_name, []):
-                        ci, ct = st.columns([1, 4])
-                        with ci:
-                            st.image(fac['img'], width=100)
-                        with ct:
-                            st.markdown(
-                                f"**[{fac['name']}]({fac['url']})**  \n"
-                                f"Loc: {fac['rank']}  \n"
-                                f"{fac['desc']}"
-                            )
-                    st.markdown("---")
-
-        # Sfat AI variabil
+        # Sfat AI variabil (stil îmbunătățit)
         advice_pool = []
-        advice_pool.append("Crede în tine! Continuă să înveți și vei reuși.")
-        if favorite_subjects:
+        advice_pool.append("Crede în tine! Continuă să lucrezi cu încredere pe drumul ales.")
+        if len(favorite_subjects) >= 2:
             sbj = ", ".join(favorite_subjects[:2])
-            advice_pool.append(f"Pasiunea ta pentru {sbj} îți oferă un avantaj unic.")
+            advice_pool.append(f"Faptul că îți plac {sbj} îți deschide perspective unice în cariera ta.")
         if people_level >= 8:
-            advice_pool.append("Empatia ta te va ajuta să fii un profesionist de încredere.")
+            advice_pool.append("Empatia ta este un atu valoros în orice profesie.")
         if creativity_level >= 8:
-            advice_pool.append("Creativitatea ta te va diferenția în orice domeniu.")
+            advice_pool.append("Creativitatea ta te va ajuta să inovezi și să te remarci.")
         advice = random.choice(advice_pool)
         st.markdown(
-            f"<div style='background-color: #e8f5e9; padding: 12px; border-radius: 8px;'>💬 <b>Sfat AI:</b> {advice}</div>",
+            f"<div style='background-color:#e8f5e9;padding:16px;border-radius:10px;margin-top:12px;'>"
+            f"<span style='font-size:1.1em;'><b>💬 Sfat AI:</b> {advice}</span>"
+            f"</div>",
             unsafe_allow_html=True
         )
 
         # Buton de descărcare recomandări
-        dl = []
+        download_lines = []
         for career_name in top5:
             inf = career_data[career_name]
-            dl.append(f"{inf['title']} - {inf['reason']}")
+            download_lines.append(f"{inf['title']} - {inf['reason']}")
             for j, stp in enumerate(inf['steps'], 1):
-                dl.append(f"  {j}. {stp}")
-            dl.append("")
+                download_lines.append(f"  {j}. {stp}")
+            download_lines.append("")
         st.download_button(
-            "Descarcă recomandările", data="\n".join(dl), file_name="recomandari.txt", mime="text/plain"
+            "Descarcă recomandările", data="
+    ".join(download_lines), file_name="recomandari.txt", mime="text/plain"
         )
     else:
-        st.write("Nu s-au găsit recomandări pe baza datelor introduse. Încearcă alte combinații de opțiuni!")
+        st.markdown("**Nu s-au găsit recomandări** pe baza datelor introduse. Încearcă alte combinații de opțiuni!", unsafe_allow_html=True)
+
 
