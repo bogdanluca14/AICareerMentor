@@ -695,7 +695,7 @@ career_top_faculties = {
         },
         {
             "name": "Facultatea de Științe Politice, Administrative și ale Comunicării",
-            "rank": "Top 2 Economie în România",
+            "rank": "Top 2 Facultăți de Științe Politice în România",
             "url": "https://www.ubbcluj.ro",
             "img": "https://www.clujazi.ro/wp-content/uploads/FSPAC.jpg",
             "lat": 46.76767,
