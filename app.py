@@ -338,7 +338,7 @@ career_top_faculties = {
     "Programator": [
         {
             "name": "Universitatea Politehnica din București",
-            "rank": "QS #1 Computer Science în România",
+            "rank": "(QS Ranking) #1 Computer Science în România",
             "url": "https://www.upb.ro",
             "img": "https://acs.pub.ro/public/poster_acs_cover4-1024x715.jpg",
             "lat": 44.43833,
@@ -347,7 +347,7 @@ career_top_faculties = {
         },
         {
             "name": "Universitatea Tehnică din Cluj-Napoca",
-            "rank": "Top 3 CS în România",
+            "rank": "Top 2 CS în România",
             "url": "https://www.utcluj.ro",
             "img": "https://www.stiridecluj.ro/files/thumbs/259/7f5b4b6b8669164c4799fc52a86fd3f0.jpeg",
             "lat": 46.76920,
@@ -356,7 +356,7 @@ career_top_faculties = {
         },
         {
             "name": "Universitatea din București",
-            "rank": "Top 2 CS în România",
+            "rank": "Top 3 CS în România",
             "url": "https://unibuc.ro",
             "img": "https://img.a1.ro/?u=https%3A%2F%2Fa1.ro%2Fuploads%2Fmodules%2Fnews%2F0%2F2018%2F7%2F8%2F781881%2F1531058737d55e5112.jpg?w=1200&h=630&c=1",
             "lat": 44.43556,
@@ -396,7 +396,7 @@ career_top_faculties = {
     "Inginer": [
         {
             "name": "Universitatea Politehnica din București",
-            "rank": "QS #1 Inginerie în România",
+            "rank": "(QS Ranking) #1 Inginerie în România",
             "url": "https://www.upb.ro",
             "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShu1KuSt9PuPhRBa0QO55ViyzNxMvCcX2U0g&s",
             "lat": 44.43833,
@@ -410,7 +410,7 @@ career_top_faculties = {
             "img": "https://upt.ro/img/51445rectorat-upt-1.jpg",
             "lat": 45.75396,
             "lon": 21.22561,
-            "desc": "Forte programe tehnice, proiecte Erasmus și cooperare cu industria europeană."
+            "desc": "Programe tehnice, proiecte Erasmus și cooperare cu industria europeană."
         },
         {
             "name": "Universitatea Tehnică din Cluj-Napoca",
@@ -456,7 +456,7 @@ career_top_faculties = {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca",
             "rank": "Top 1 cercetare universitara în România",
             "url": "https://www.ubbcluj.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/UBB_Cluj_%282010%29.JPG",
+            "img": "https://visitcluj.ro/wp-content/uploads/2021/05/Universitatea-Babes-Bolyai-UBB-PMC16604_.jpg",
             "lat": 46.76767,
             "lon": 23.59137,
             "desc": "Puternic în STEM, cu peste 200 de proiecte internaționale de cercetare."
@@ -465,7 +465,7 @@ career_top_faculties = {
             "name": "Universitatea din București",
             "rank": "Top 2 cercetare în România",
             "url": "https://unibuc.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/2/21/University_of_Bucharest_%281%29.jpg",
+            "img": "https://unibuc.ro/wp-content/uploads/2020/01/shutterstock_576068437-700x480.jpg",
             "lat": 44.43556,
             "lon": 26.10112,
             "desc": "Excelență în științe sociale și natură, centre de cercetare multidisciplinare."
@@ -474,10 +474,10 @@ career_top_faculties = {
             "name": "Universitatea Alexandru Ioan Cuza Iași",
             "rank": "Top 3 cercetare în România",
             "url": "https://www.uaic.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/3/36/Palatul_Universitatii_din_Iasi.jpg",
+            "img": "https://iassium.ro/wp-content/uploads/2019/07/iassium-unviersitatea-cuza-iasi.jpg",
             "lat": 47.16222,
             "lon": 27.58889,
-            "desc": "Forte centre de cercetare în științe umaniste, chimie și biologie."
+            "desc": "Centre de cercetare în științe umaniste, chimie și biologie."
         }
     ],
     "Militar": [
@@ -543,7 +543,7 @@ career_top_faculties = {
             "name": "Universitatea Națională de Arte București",
             "rank": "Top 1 Arte Vizuale în România",
             "url": "https://unarte.org",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/5/5a/UNArte_scoala.jpg",
+            "img": "https://unarte.org/wp-content/uploads/2021/03/B994699C-F9A0-4D41-ABAE-0952AA42BB39.jpeg",
             "lat": 44.44720,
             "lon": 26.09830,
             "desc": "Centrul principal de formare artistică, programe de licență și masterat diverse."
@@ -552,7 +552,7 @@ career_top_faculties = {
             "name": "Universitatea de Artă și Design Cluj-Napoca",
             "rank": "Top 2 Arte Vizuale în România",
             "url": "https://uad.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/0/0b/UAD_Cluj.jpg",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Kolozsvar_Matyas_kiraly_szulohaza.JPG",
             "lat": 46.76960,
             "lon": 23.58300,
             "desc": "Renume pentru design grafic, arte plastice și arte decorative."
@@ -561,7 +561,7 @@ career_top_faculties = {
             "name": "Universitatea de Vest Timișoara - Facultatea de Arte și Design",
             "rank": "Top 3 Arte Vizuale în România",
             "url": "https://www.uvt.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/4/4f/UVT_corp_principal.jpg",
+            "img": "https://admitere.uvt.ro/wp-content/uploads/listing-uploads/cover/2022/05/08b.jpg",
             "lat": 45.74712,
             "lon": 21.23151,
             "desc": "Programe interdisciplinare de arte vizuale, design și multimedia."
@@ -572,7 +572,7 @@ career_top_faculties = {
             "name": "Universitatea Națională de Muzică București",
             "rank": "Top 1 Muzică în România",
             "url": "https://www.unmb.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/1/15/UNMB.jpg",
+            "img": "https://www.societateamuzicala.ro/societateaculturala/wp-content/uploads/2015/04/Universitatea-Nationala-de-Muzica-Bucuresti.jpg",
             "lat": 44.43918,
             "lon": 26.09700,
             "desc": "Lider în educație muzicală, studii superioare de interpretare și compoziție."
@@ -581,19 +581,19 @@ career_top_faculties = {
             "name": "Universitatea de Vest Timișoara - Facultatea de Muzică și Teatru",
             "rank": "Top 2 Muzică în România",
             "url": "https://www.uvt.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/4/4f/UVT_corp_principal.jpg",
+            "img": "https://uvt.ro/wp-content/uploads/2021/01/fmtuvt.jpg",
             "lat": 45.74712,
             "lon": 21.23151,
-            "desc": "Programe dedicate interpretării muzicale și muzicologiei."
+            "desc": "Programe dedicate interpretării muzicale."
         },
         {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca - Facultatea de Muzică și Teatru",
             "rank": "Top 3 Muzică în România",
             "url": "https://www.ubbcluj.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/UBB_Cluj_%282010%29.JPG",
+            "img": "https://www.ubbcluj.ro/images/thumb_section_structura_1.png",
             "lat": 46.76767,
             "lon": 23.59137,
-            "desc": "Renume pentru programe de muzică clasică și modernă, colaborări internaționale."
+            "desc": "Renumită pentru programe de muzică clasică și modernă, colaborări internaționale."
         }
     ],
     "Jurist": [
@@ -601,16 +601,16 @@ career_top_faculties = {
             "name": "Universitatea din București - Facultatea de Drept",
             "rank": "Top 1 Drept în România",
             "url": "https://www.unibuc.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/2/21/University_of_Bucharest_%281%29.jpg",
+            "img": "https://rrpb.ro/wp-content/uploads/2021/02/facultate-746x400-1.jpg",
             "lat": 44.43556,
             "lon": 26.10112,
-            "desc": "Renumită pentru programele de licență și master în drept penal, civil și internațional."
+            "desc": "Renumită pentru programele de licență și master în drept penal, civil."
         },
         {
             "name": "Academia de Studii Economice București - Facultatea de Drept",
             "rank": "Top 2 Drept în România",
             "url": "https://www.ase.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/3/33/ASE_Bucuresti.jpg",
+            "img": "https://tb.ziareromania.ro/Facultatea-de-Drept--introdusa-din-acest-an-de-Academia-de-Studii-Economice-din-Bucuresti--Admiterea-o-sa-fie-online/a35a9562f8e70ca4dd/400/225/2/100/Facultatea-de-Drept--introdusa-din-acest-an-de-Academia-de-Studii-Economice-din-Bucuresti--Admiterea-o-sa-fie-online.jpg",
             "lat": 44.44750,
             "lon": 26.09670,
             "desc": "Programe integrate de drept și economie, focus pe legislație comercială."
@@ -619,7 +619,7 @@ career_top_faculties = {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca - Facultatea de Drept",
             "rank": "Top 3 Drept în România",
             "url": "https://www.ubbcluj.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/UBB_Cluj_%282010%29.JPG",
+            "img": "https://cdn.g4media.ro/wp-content/uploads/2025/04/fac-de-drept-768x432.jpg",
             "lat": 46.76767,
             "lon": 23.59137,
             "desc": "Curriculum axat pe drept european și dreptul omului."
@@ -630,7 +630,7 @@ career_top_faculties = {
             "name": "SNSPA - Facultatea de Comunicare și Relații Publice",
             "rank": "Top 1 Jurnalism în România",
             "url": "https://snspa.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/8/84/SNSPA.jpg",
+            "img": "https://admitere.snspa.ro/wp-content/uploads/2017/02/TUD_1608.jpg",
             "lat": 44.42800,
             "lon": 26.09000,
             "desc": "Program axat pe jurnalism multimedia și comunicare strategică."
@@ -639,7 +639,7 @@ career_top_faculties = {
             "name": "Universitatea din București - Facultatea de Jurnalism și Științele Comunicării",
             "rank": "Top 2 Jurnalism în România",
             "url": "https://unibuc.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/2/21/University_of_Bucharest_%281%29.jpg",
+            "img": "https://admitere.unibuc.ro/wp-content/uploads/2023/05/zpd-fjsc-admitere-2023.jpg",
             "lat": 44.43556,
             "lon": 26.10112,
             "desc": "Specializări în jurnalism de investigație și media digitală."
@@ -648,7 +648,7 @@ career_top_faculties = {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca - Jurnalism",
             "rank": "Top 3 Jurnalism în România",
             "url": "https://www.ubbcluj.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/UBB_Cluj_%282010%29.JPG",
+            "img": "https://www.stiridecluj.ro/files/thumbs/247/c_1ca3f25bef7995d599221eb52736cb3a.png",
             "lat": 46.76767,
             "lon": 23.59137,
             "desc": "Programe în jurnalism cultural și politic cu stagiaturi în mass-media locală."
@@ -659,7 +659,7 @@ career_top_faculties = {
             "name": "Academia de Studii Economice București",
             "rank": "Top 1 Economie în România",
             "url": "https://www.ase.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/3/33/ASE_Bucuresti.jpg",
+            "img": "https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZWRpZ2lmbTEucmNzLXJkcy5y/byUyRnN0b3JhZ2UlMkYyMDE5JTJGMDUl/MkYyMCUyRjEwNzU0MjlfMTA3NTQyOV9B/U0UtQWNhZGVtaWEtZGUtU3R1ZGlpLUVj/b25vbWljZS5qcGcmdz03ODAmaD00NDAm/aGFzaD03MGFkOGFhZmE4YTI5ODViOWE0Y2FjZGM4NmQyNWM1ZQ==.thumb.jpg",
             "lat": 44.44750,
             "lon": 26.09670,
             "desc": "Lider în științe economice, programe de finanțe, marketing și economie digitală."
@@ -668,7 +668,7 @@ career_top_faculties = {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca - Economie și Business",
             "rank": "Top 2 Economie în România",
             "url": "https://www.ubbcluj.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/UBB_Cluj_%282010%29.JPG",
+            "img": "https://i0.wp.com/cluju.ro/wp-content/uploads/2017/07/FSEGA-Admitere-Iulie-2017-P10.jpg",
             "lat": 46.76767,
             "lon": 23.59137,
             "desc": "Departament cu cercetare puternică în economie comportamentală și data analytics."
@@ -677,7 +677,7 @@ career_top_faculties = {
             "name": "Universitatea Alexandru Ioan Cuza Iași - Economie",
             "rank": "Top 3 Economie în România",
             "url": "https://www.uaic.ro",
-            "img": "https://upload.wikimedia.org/wikipedia/commons/3/36/Palatul_Universitatii_din_Iasi.jpg",
+            "img": "https://www.feaa.uaic.ro/wp-content/uploads/2023/05/FEAA-Corp-B.jpg",
             "lat": 47.16222,
             "lon": 27.58889,
             "desc": "Programe de macroeconomie și politici economice, centre de analize economice."
@@ -703,7 +703,267 @@ career_top_faculties = {
             "desc": "Facultate de științe politice și administrative, situată în Cluj."
         }
     ],
-    # Poți continua pentru restul carierelor (Antreprenor, Psiholog, Veterinar, Arhitect, Farmacist, Contabil, Scriitor, Designer, Analist de date, Politician) în același format.
+    "Antreprenor": [
+        {
+            "name": "Academia de Studii Economice București",
+            "rank": "#1 Științe Economice în România",
+            "url": "https://www.esb-business-school.de/en/the-esb/partner-universities/detailsite/bucharest-university-of-economic-studies",
+            "img": "https://tb.ziareromania.ro/Te-pregatesti-sa-devii-student--Alege-Academia-de-Studii-Economice-din-Bucuresti-/049d556023050afc7a/400/225/2/100/Te-pregatesti-sa-devii-student--Alege-Academia-de-Studii-Economice-din-Bucuresti-.jpg",
+            "lat": 44.44750,
+            "lon": 26.09670,
+            "desc": "Una dintre cele mai mari și specializate universități de economie și business, cu centre pentru startup-uri și cursuri dedicate antreprenoriatului."  # :contentReference[oaicite:6]{index=6}
+        },
+        {
+            "name": "Universitatea Babeș-Bolyai Cluj-Napoca - Facultatea de Științe Economice și Gestiunea Afacerilor",
+            "rank": "Locul 2 în Business & Management în România",
+            "url": "https://www.ubbcluj.ro/despre/facultati/fsega/",
+            "img": "https://www.ubbcluj.ro/images/picture_istoric_fsega_.jpg",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Renumită pentru curriculele de business moderne, laboratoare de simulare și competiții de antreprenoriat."  # :contentReference[oaicite:7]{index=7}
+        },
+        {
+            "name": "Universitatea Alexandru Ioan Cuza Iași - Facultatea de Economie și Administrarea Afacerilor",
+            "rank": "Locul 3 în Științe Economice în România",
+            "url": "https://www.feaa.uaic.ro",
+            "img": "https://www.feaa.uaic.ro/wp-content/uploads/2023/05/FEAA-Corp-B.jpg",
+            "lat": 47.16222,
+            "lon": 27.58889,
+            "desc": "Cunoscută pentru cercetarea în macroeconomie și politici economice, conferințe internaționale și proiecte de colaborare cu instituții europene."  # :contentReference[oaicite:8]{index=8}
+        }
+    ],
+    "Psiholog": [
+        {
+            "name": "Universitatea din București Facultatea de Psihologie și Științele Educației",
+            "rank": "Top 1 Psihologie în România",
+            "url": "https://fpse.unibuc.ro",
+            "img": "https://fpse.unibuc.ro/wp-content/uploads/2023/01/12094730_1482304882073084_3162350211045692050_o-624x243.jpg",
+            "lat": 44.43556,
+            "lon": 26.10112,
+            "desc": "Formare pedagogică și psihopedagogie, psihologie clinică și organizațională."  # :contentReference[oaicite:3]{index=3}
+        },
+        {
+            "name": "Universitatea Babeș-Bolyai Cluj-Napoca Facultatea de Psihologie și Științele Educației",
+            "rank": "Top 2 Psihologie în România",
+            "url": "https://www.ubbcluj.ro",
+            "img": "https://psiedu.ubbcluj.ro/data/uploads/poze/biblioteca.jpg",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Programe de consiliere psihologică, psihologie socială și educațională."  # :contentReference[oaicite:4]{index=4}
+        },
+        {
+            "name": "Universitatea de Vest Timișoara Facultatea de Sociologie și Psihologie",
+            "rank": "Top 3 Psihologie în România",
+            "url": "https://www.uvt.ro",
+            "img": "https://www.timisoreni.ro/upload/photo/2012-03/universitatea_de_vest_timisoara_2_large.jpg",
+            "lat": 45.74712,
+            "lon": 21.23151,
+            "desc": "Psihologie clinică, organizațională și educațională, centre de practică pentru studenți."  # 
+        }
+    ],
+    "Veterinar": [
+        {
+            "name": "Universitatea de Științe Agricole și Medicină Veterinară Cluj-Napoca",
+            "rank": "Top 1 Medicină Veterinară în România",
+            "url": "https://www.usamvcluj.ro",
+            "img": "https://i0.wp.com/cluju.ro/wp-content/uploads/2022/05/USAMV-Cluj.jpg",
+            "lat": 46.76670,
+            "lon": 23.56670,
+            "desc": "Pionier în educație veterinară, centre de cercetare și clinici veterinare universitare."  # :contentReference[oaicite:6]{index=6}
+        },
+        {
+            "name": "Universitatea de Științe Agricole și Medicină Veterinară București (USAMV)",
+            "rank": "Top 2 Medicină Veterinară în România",
+            "url": "https://www.usamv.ro",
+            "img": "https://usamv.ro/wp-content/uploads/2022/11/univ.jpg",
+            "lat": 44.43930,
+            "lon": 26.05000,
+            "desc": "Campus modern și programe de specializare în sănătatea animalelor de companie."  # :contentReference[oaicite:7]{index=7}
+        },
+        {
+            "name": "Universitatea de Științe Agricole și Medicină Veterinară a Banatului Timișoara",
+            "rank": "Top 3 Medicină Veterinară în România",
+            "url": "https://www.usab-tm.ro",
+            "img": "https://www.revistafermierului.ro/media/k2/items/cache/6c1295254c1fd77b0bf5c280d7c50593_XL.jpg",
+            "lat": 45.73762,
+            "lon": 21.22724,
+            "desc": "Programe de medicină veterinară cu accent pe boli și chirurgie animală."  # :contentReference[oaicite:8]{index=8}
+        }
+    ],
+    "Arhitect": [
+        {
+            "name": "Universitatea de Arhitectură și Urbanism Ion Mincu București",
+            "rank": "Top 1 Arhitectură în România",
+            "url": "https://uauim.ro",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fac_ahitectura_Ion_Mincu.jpg",
+            "lat": 44.43890,
+            "lon": 26.09610,
+            "desc": "Program de elită în design arhitectural și urbanism."  # :contentReference[oaicite:9]{index=9}
+        },
+        {
+            "name": "Universitatea Politehnica Timișoara Facultatea de Arhitectură și Urbanism",
+            "rank": "Top 2 Arhitectură în România",
+            "url": "https://upt.ro",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Facultatea_de_Constructi-Arhitectura_Timisoara_2.jpg",
+            "lat": 45.75396,
+            "lon": 21.22561,
+            "desc": "Excelență în proiectare urbană și tehnici moderne de construcție."  # 
+        },
+        {
+            "name": "Universitatea Tehnică din Cluj-Napoca Facultatea de Arhitectură și Urbanism Joseph Köteles",
+            "rank": "Top 3 Arhitectură în România",
+            "url": "https://utcluj.ro",
+            "img": "https://clujtravel.com/wp-content/uploads/2010/09/utcn-cluj.png",
+            "lat": 46.76920,
+            "lon": 23.58550,
+            "desc": "Program cu focus pe dezvoltare durabilă și restaurare arhitecturală."  # 
+        }
+    ],
+    "Farmacist": [
+        {
+            "name": "Universitatea de Medicină și Farmacie Carol Davila București",
+            "rank": "Top 1 Farmacie în România",
+            "url": "https://umfcd.ro",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fosta_Facultate_de_Medicina_azi_Universitatea_de_Medicina_si_Farmacie%2C_Bd._Eroii_Sanitari_nr._8%2C_sect._5%2C_Bucuresti.JPG",
+            "lat": 44.43528,
+            "lon": 26.07000,
+            "desc": "Tradiție în formare farmaceutică, cercetare în biofarmacie și farmacologie."  # 
+        },
+        {
+            "name": "Universitatea de Medicină și Farmacie Grigore T. Popa Iași",
+            "rank": "Top 2 Farmacie în România",
+            "url": "https://www.umfiasi.ro",
+            "img": "https://culturainiasi.ro/wp-content/uploads/2017/06/Universitatea-de-Medicin%C4%83-%C8%99i-Farmacie-Grigore-T.-Popa-Ia%C8%99i.jpg",
+            "lat": 47.16015,
+            "lon": 27.59581,
+            "desc": "Programe de formare farmacologică și cercetare clinico-farmaceutică."  # 
+        },
+        {
+            "name": "Universitatea de Medicină și Farmacie Iuliu Hațieganu Cluj-Napoca",
+            "rank": "Top 3 Farmacie în România",
+            "url": "https://www.umfcluj.ro",
+            "img": "https://cdn.umfcluj.ro/uploads/2021/10/umfih-07.jpg",
+            "lat": 46.76206,
+            "lon": 23.58360,
+            "desc": "Cercetare avansată în biochimie și farmacologie experimentală."  # 
+        }
+    ],
+    "Contabil": [
+        {
+            "name": "Academia de Studii Economice București Facultatea de Contabilitate și Informatică de Gestiune",
+            "rank": "Top 1 Contabilitate în România",
+            "url": "https://www.ase.ro",
+            "img": "https://www.economistul.ro/wp-content/uploads/2024/10/ASE_Piata-Romana-resize.jpg",
+            "lat": 44.44750,
+            "lon": 26.09670,
+            "desc": "Programe acreditate CECCAR, pregătire în audit și fiscalitate."  # :contentReference[oaicite:15]{index=15}
+        },
+        {
+            "name": "Universitatea Alexandru Ioan Cuza Iași Economie și Business (Contabilitate)",
+            "rank": "Top 2 Contabilitate în România",
+            "url": "https://www.feaa.uaic.ro",
+            "img": "https://keystoneacademic-res.cloudinary.com/image/upload/c_fill,w_3840,h_1645,g_auto/dpr_auto/f_auto/q_auto/v1/element/12/125533_coversize.jpg",
+            "lat": 47.16222,
+            "lon": 27.58889,
+            "desc": "Specializări în contabilitate financiară și management financiar."  # :contentReference[oaicite:16]{index=16}
+        },
+        {
+            "name": "Universitatea de Vest Timișoara Facultatea de Socio-Umane (Contabilitate)",
+            "rank": "Top 3 Contabilitate în România",
+            "url": "https://www.uvt.ro",
+            "img": "https://uvt.ro/wp-content/uploads/2020/10/UVT-2-2.jpg",
+            "lat": 45.74712,
+            "lon": 21.23151,
+            "desc": "Curriculum axat pe audit, fiscalitate și ERP în contabilitate."  # 
+        }
+    ],
+    "Scriitor": [
+        {
+            "name": "Universitatea din București Facultatea de Litere",
+            "rank": "Top 1 Literatură Română în România",
+            "url": "https://litere.unibuc.ro",
+            "img": "https://cdn.edupedu.ro/wp-content/uploads/2020/06/Unibuc.jpg",
+            "lat": 44.43556,
+            "lon": 26.10112,
+            "desc": "Profiluri în filologie, scriere creativă și literatură comparată."  # :contentReference[oaicite:18]{index=18}
+        },
+        {
+            "name": "Universitatea Babeș-Bolyai Cluj-Napoca Facultatea de Litere",
+            "rank": "Top 2 Literatură Română în România",
+            "url": "https://litere.ubbcluj.ro",
+            "img": "https://visitcluj.ro/wp-content/uploads/2021/05/Universitatea-Babes-Bolyai-UBB-PMC16609_.jpg",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Domenii de studiu: literatură, comunicare, jurnalism literar."  # :contentReference[oaicite:19]{index=19}
+        },
+        {
+            "name": "Universitatea Alexandru Ioan Cuza Iași Facultatea de Litere",
+            "rank": "Top 3 Literatură Română în România",
+            "url": "https://www.uaic.ro",
+            "img": "https://culturainiasi.ro/wp-content/uploads/2017/06/Facultatea-de-Litere.jpg",
+            "lat": 47.16222,
+            "lon": 27.58889,
+            "desc": "Programe avansate în literatură și scriere creativă."  # :contentReference[oaicite:20]{index=20}
+        }
+    ],
+    "Designer": [
+        {
+            "name": "Universitatea Națională de Arte București",
+            "rank": "Top 1 Design Grafic în România",
+            "url": "https://unarte.org",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/UNARTE_Bucaresti_14.jpg/960px-UNARTE_Bucaresti_14.jpg",
+            "lat": 44.44720,
+            "lon": 26.09830,
+            "desc": "Programe de design grafic, design de produs și arte vizuale."  # 
+        },
+        {
+            "name": "Universitatea de Artă și Design Cluj-Napoca",
+            "rank": "Top 2 Design Grafic în România",
+            "url": "https://uad.ro",
+            "img": "https://www.uad.ro/Public/Images/01%20DESPRE%20NOI/01%20Despre%20noi/UAD_fatada.jpg",
+            "lat": 46.76960,
+            "lon": 23.58300,
+            "desc": "Excelență în design vestimentar, design de produs și media digitală."  # 
+        },
+        {
+            "name": "Universitatea de Vest Timișoara Facultatea de Arte și Design",
+            "rank": "Top 3 Design Grafic în România",
+            "url": "https://www.uvt.ro",
+            "img": "https://admitere.uvt.ro/wp-content/uploads/listing-uploads/cover/2022/05/08b.jpg",
+            "lat": 45.74712,
+            "lon": 21.23151,
+            "desc": "Programe interdisciplinare de multimedia, design grafic și arte digitale."  # 
+        }
+    ],
+    "Analist de date": [
+        {
+            "name": "Universitatea Politehnica din București Facultatea de Automatică și Calculatoare",
+            "rank": "Top 1 Data Science în România",
+            "url": "https://www.acs.pub.ro",
+            "img": "https://cdn.slidesharecdn.com/ss_thumbnails/brosura2011-2012v15-1-111122104829-phpapp02-thumbnail.jpg",
+            "lat": 44.43833,
+            "lon": 26.05139,
+            "desc": "Specializări în inteligență artificială, big data și machine learning."  # 
+        },
+        {
+            "name": "Universitatea Babeș-Bolyai Cluj-Napoca Facultatea de Matematică și Informatică",
+            "rank": "Top 2 Data Science în România",
+            "url": "https://math.ubbcluj.ro",
+            "img": "https://ssmr.ro/files/newsletter/news7/UBB1.png",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Cursuri avansate de analiză de date, statistică și data mining."  # :contentReference[oaicite:25]{index=25}
+        },
+        {
+            "name": "Universitatea Tehnică din Cluj-Napoca Facultatea ETTI",
+            "rank": "Top 3 Data Science în România",
+            "url": "https://etc.utcluj.ro",
+            "img": "https://www.utcluj.ro/media/faculties/7/inginerie-electrica.jpg.1280x720_q85_crop-smart.jpg",
+            "lat": 46.76920,
+            "lon": 23.58550,
+            "desc": "Programe de calcul paralel, big data și machine learning aplicat."  # 
+        }
+    ]
 }
 
 
@@ -891,7 +1151,7 @@ if submit:
             with exp:
                 # Motiv de potrivire
                 reason = info['reason'].capitalize()
-                st.markdown(f"**De ce ți se potrivește:** {reason}.")
+                st.markdown(f"**Ți se potrivește dacă:** {reason}.")
                 # Pași concreți
                 st.markdown("**Pași concreți pentru a ajunge aici:**")
                 for i, step in enumerate(info['steps'], 1):
