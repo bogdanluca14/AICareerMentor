@@ -1,4 +1,4 @@
-[![Launch App](https://img.shields.io/badge/🔗-Live%20Demo-blue)](YOUR_LIVE_DEMO_LINK_HERE)
+[![Launch App](https://img.shields.io/badge/🔗-Live%20Demo-blue)](https://aicareermentor.streamlit.app/)
 
 ## 🎓 Mentor Carieră AI
 
