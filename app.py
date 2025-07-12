@@ -39,8 +39,8 @@ subjects_list = ["Matematică", "Informatică", "Fizică", "Chimie", "Biologie",
                  "Economie", "Arte"]
 
 # Lista de cariere posibile
-careers_list = ["Programator", "Medic", "Inginer", "Profesor", "Cercetător", "Militar"
-                "Artist", "Muzician", "Jurist", "Jurnalist", "Economist", "Polițist"
+careers_list = ["Programator", "Medic", "Inginer", "Profesor", "Cercetător", "Militar",
+                "Artist", "Muzician", "Jurist", "Jurnalist", "Economist", "Polițist",
                 "Antreprenor", "Psiholog", "Veterinar", "Arhitect", "Farmacist",
                 "Contabil", "Scriitor", "Designer", "Analist de date", "Politician"]
 
@@ -645,7 +645,6 @@ study_years = {
     "Medic": 10,
     "Cercetător": 8,
     "Veterinar": 6,
-    "Polițist": 4,
     "Arhitect": 6,
     "Farmacist": 5,
     "Jurist": 5
