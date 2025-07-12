@@ -87,7 +87,7 @@ career_data = {
     },
     "Profesor": {
         "subjects": ["Limba și literatura română", "Istorie", "Geografie"],
-        "mode": "Team",
+        "mode": "Both",
         "creativity": "med",
         "people": "high",
         "reason": "îți place să împărtășești cunoștințe și ai răbdare cu ceilalți",
