@@ -777,19 +777,12 @@ if submit:
 
         # Dropdown cu primele 5 cariere recomandate
         top5 = suggestions[:5]
-        selected = st.selectbox(
-            "",  # eliminăm eticheta
-            options=top5,
-            index=0,
-            help="Alege unul dintre primele 5 joburi recomandate",
-            label_visibility='collapsed'
-        )
 
         # Afișăm expandere pentru fiecare din top5, dar în layout vertical
         for career_name in top5:
             info = career_data[career_name]
             icon = career_icons.get(career_name, "🖋️")
-            exp = st.expander(f"{icon} {info['title']}", expanded=(career_name == selected))
+            exp = st.expander(f"{icon} {info['title']}", expanded=career_name)
             with exp:
                 # Motiv de potrivire
                 reason = info['reason'].capitalize()
