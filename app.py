@@ -1117,7 +1117,7 @@ if submit:
 
     # Afișează recomandările dacă există
     if suggestions:
-        st.markdown("## 🔍 Mentorul AI ți-a recomandat următoarele cariere:", unsafe_allow_html=True)
+        st.markdown("## 🔍 Mentorul AI ți-a recomandat următoarele cariere (apasă pe fiecare):", unsafe_allow_html=True)
         career_icons = {
             "Programator": "🚀", "Medic": "🩺", "Inginer": "⚙️", "Profesor": "📚", "Cercetător": "🔬",
             "Artist": "🎨", "Muzician": "🎵", "Jurist": "⚖️", "Jurnalist": "📰", "Economist": "💼",
