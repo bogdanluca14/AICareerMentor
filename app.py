@@ -775,6 +775,15 @@ if submit:
             "Contabil": "📊", "Scriitor": "✒️", "Designer": "🎨", "Analist de date": "📈", "Politician": "🏛️"
         }
 
+        # Dropdown cu primele 5 cariere recomandate
+        top5 = suggestions[:5]
+        selected = st.selectbox(
+            "Selectează un job pentru detalii:",
+            options=top5,
+            index=0,
+            help="Alege unul dintre primele 5 joburi recomandate"
+        )
+
         # Afișăm expandere pentru fiecare din top5, dar în layout vertical
         for career_name in top5:
             info = career_data[career_name]
