@@ -1,6 +1,3 @@
-sys
-subprocess
 streamlit
 folium
-random
 requests
