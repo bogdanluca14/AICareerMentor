@@ -31,7 +31,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Titlu și instrucțiuni de utilizare
 st.markdown("# 🎓 Mentor Carieră AI")
-st.markdown("_Completează formularul scurt, alege domeniul, apoi apasă **Vezi recomandări AI**_")
+st.markdown("_Completează formularul, alege domeniul, apoi apasă **Vezi recomandări AI**_")
 
 # Lista de materii posibile
 subjects_list = ["Matematică", "Informatică", "Fizică", "Chimie", "Biologie",
