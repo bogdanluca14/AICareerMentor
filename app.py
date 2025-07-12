@@ -164,7 +164,7 @@ career_data = {
         "title": "Polițist"
     },
     "Militar": {
-        "subjects": ["Matematică", "Fizică", "Informatică"],
+        "subjects": ["Matematică", "Fizică"],
         "mode": "Both",
         "creativity": "med",
         "people": "med",
