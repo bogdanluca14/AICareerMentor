@@ -792,17 +792,16 @@ if submit:
                 for i, step in enumerate(info['steps'], 1):
                     st.markdown(f"{i}. {step}")
                 # Facultăți top
-                st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
-                for fac in career_top_faculties.get(career_name, []):
+                facultati = career_top_faculties.get(career_name, [])
+                if len(Facultati) > 0: st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
+                for fac in facultati:
                     ci, ct = st.columns([1, 4])
                     with ci:
-                        st.image(fac['img'], width=150)
+                        st.image(fac['img'], width=200)
                     with ct:
-                        st.markdown(
-                            f"[{fac['name']}]({fac['url']}) - "
-                            f"Locul în clasament: {fac['rank']}\n"
-                            f"{fac['desc']}"
-                        )
+                        st.markdown(f"[{fac['name']}]({fac['url']}) - Locul în clasament: {fac['rank']}")
+                        st.markdown(f"{fac['desc']}")
+
                 st.markdown("---")
 
         # Sfat AI variabil (stil îmbunătățit)
