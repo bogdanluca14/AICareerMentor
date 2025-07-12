@@ -1,3 +1,5 @@
+![Screenshot](Screenshot.png)
+
 ## Link către site: https://aicareermentor.streamlit.app/
 [![Launch App](https://img.shields.io/badge/🔗-Live%20Demo-blue)](https://aicareermentor.streamlit.app/)
 
