@@ -39,8 +39,8 @@ subjects_list = ["Matematică", "Informatică", "Fizică", "Chimie", "Biologie",
                  "Economie", "Arte"]
 
 # Lista de cariere posibile
-careers_list = ["Programator", "Medic", "Inginer", "Profesor", "Cercetător",
-                "Artist", "Muzician", "Avocat", "Jurnalist", "Economist",
+careers_list = ["Programator", "Medic", "Inginer", "Profesor", "Cercetător", "Militar"
+                "Artist", "Muzician", "Jurist", "Jurnalist", "Economist", "Polițist"
                 "Antreprenor", "Psiholog", "Veterinar", "Arhitect", "Farmacist",
                 "Contabil", "Scriitor", "Designer", "Analist de date", "Politician"]
 
@@ -137,18 +137,44 @@ career_data = {
         ],
         "title": "Muzician"
     },
-    "Avocat": {
+    "Jurist": {
         "subjects": ["Istorie", "Limba și literatura română"],
         "mode": "Individual",
         "creativity": "med",
         "people": "med",
         "reason": "ai abilități de comunicare și te preocupă dreptatea",
         "steps": [
-            "Pregătește-te la discipline socio-umane (istorie, logică) pentru admiterea la drept",
+            "Pregătește-te la discipline socio-umane (istorie, română) pentru admiterea la drept",
             "Finalizează studiile la o facultate de drept (4 ani) și efectuează stagiul (INM sau barou) pentru calificare",
-            "Câștigă experiență lucrând într-un birou de avocatură sau prin internship-uri în domeniul juridic"
+            "Câștigă experiență lucrând într-un birou de avocatura sau prin internship-uri în domeniul juridic"
         ],
-        "title": "Avocat"
+        "title": "Jurist"
+    },
+    "Polițist": {
+        "subjects": ["Istorie", "Limba și literatura română"],
+        "mode": "Individual",
+        "creativity": "med",
+        "people": "med",
+        "reason": "te preocupă dreptatea și ai abilități de comunicare",
+        "steps": [
+            "Pregătește-te fizic și învață o limbă de circulație internațională",
+            "Pregătește-te la discipline socio-umane (istorie, română) pentru admiterea la o școală de poliție",
+            "Finalizează studiile la academia de poliție (4 ani) sau la o școală de agenți de poliție"
+        ],
+        "title": "Polițist"
+    },
+    "Militar": {
+        "subjects": ["Matematică", "Fizică", "Informatică"],
+        "mode": "Both",
+        "creativity": "med",
+        "people": "med",
+        "reason": "ești orientat spre soluții practice și stăpânești științele exacte",
+        "steps": [
+            "Pregătește-te fizic și învață o limbă de circulație internațională",
+            "Consolidează-ți cunoștințele de matematică și fizică prin proiecte practice",
+            "Finalizează studiile la o academie militară"
+        ],
+        "title": "Militar"
     },
     "Jurnalist": {
         "subjects": ["Limba și literatura română", "Istorie", "Geografie"],
@@ -512,7 +538,7 @@ career_top_faculties = {
             "desc": "Renume pentru programe de muzică clasică și modernă, colaborări internaționale."
         }
     ],
-    "Avocat": [
+    "Jurist": [
         {
             "name": "Universitatea din București - Facultatea de Drept",
             "rank": "Top 1 Drept în România",
@@ -520,7 +546,7 @@ career_top_faculties = {
             "img": "https://upload.wikimedia.org/wikipedia/commons/2/21/University_of_Bucharest_%281%29.jpg",
             "lat": 44.43556,
             "lon": 26.10112,
-            "desc": "Reputată pentru programele de licență și master în drept penal, civil și internațional."
+            "desc": "Renumită pentru programele de licență și master în drept penal, civil și internațional."
         },
         {
             "name": "Academia de Studii Economice București - Facultatea de Drept",
@@ -621,7 +647,7 @@ study_years = {
     "Veterinar": 6,
     "Arhitect": 6,
     "Farmacist": 5,
-    "Avocat": 5
+    "Jurist": 5
 }
 # Pentru celelalte cariere care nu apar aici, vom considera implicit 4 ani (o licență)
 
@@ -742,10 +768,10 @@ if submit:
         if leadership_level >= 7:
             if career_name in ["Antreprenor", "Politician"]:
                 score += 2
-            if career_name in ["Avocat", "Profesor"]:
+            if career_name in ["Jurist", "Profesor"]:
                 score += 1
         elif leadership_level <= 3:
-            if career_name in ["Antreprenor", "Politician", "Avocat"]:
+            if career_name in ["Antreprenor", "Politician", "Jurist"]:
                 score -= 2
         # Potrivirea cu durata studiilor dorită
         required_years = study_years.get(career_name, 4)
@@ -770,9 +796,10 @@ if submit:
         st.markdown("## 🔍 Mentorul AI ți-a recomandat următoarele cariere:", unsafe_allow_html=True)
         career_icons = {
             "Programator": "🚀", "Medic": "🩺", "Inginer": "⚙️", "Profesor": "📚", "Cercetător": "🔬",
-            "Artist": "🎨", "Muzician": "🎵", "Avocat": "⚖️", "Jurnalist": "📰", "Economist": "💼",
+            "Artist": "🎨", "Muzician": "🎵", "Jurist": "⚖️", "Jurnalist": "📰", "Economist": "💼",
             "Antreprenor": "💡", "Psiholog": "🧠", "Veterinar": "🐾", "Arhitect": "📐", "Farmacist": "💊",
-            "Contabil": "📊", "Scriitor": "✒️", "Designer": "🎨", "Analist de date": "📈", "Politician": "🏛️"
+            "Contabil": "📊", "Scriitor": "✒️", "Designer": "🎨", "Analist de date": "📈", "Politician": "🏛️",
+            "Polițist": "👮", "Militar": "💂"
         }
 
         # Dropdown cu primele 5 cariere recomandate
