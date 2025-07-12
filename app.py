@@ -31,7 +31,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Titlu și instrucțiuni de utilizare
 st.markdown("# 🎓 Mentor Carieră AI")
-st.markdown("_Completează, alege domeniul, apoi apasă **Vezi recomandări AI** — răspuns în ~5-10s._")
+st.markdown("_Completează, alege domeniul, apoi apasă **Vezi recomandări AI**")
 
 # Lista de materii posibile
 subjects_list = ["Matematică", "Informatică", "Fizică", "Chimie", "Biologie",
@@ -480,6 +480,64 @@ career_top_faculties = {
             "desc": "Forte centre de cercetare în științe umaniste, chimie și biologie."
         }
     ],
+    "Militar": [
+        {
+            "name": "Academia Tehnică Militară Ferdinand I",
+            "rank": "Top 1 academie militară în România",
+            "url": "https://mta.ro/",
+            "img": "https://upload.wikimedia.org/wikipedia/ro/5/5f/Academia_Tehnic%C4%83_Militar%C4%83-2.JPG",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Cea mai bună academie militară din România."
+        },
+        {
+            "name": "Școala Militară de Maiștri Militari a Forțelor Navale Amiral Ion Murgescu",
+            "rank": "Top 2 școli militare",
+            "url": "https://www.smmmfn.ro/",
+            "img": "https://ziarulamprenta.ro/wp-content/uploads/2018/11/scoala-maistri-militari.jpg",
+            "lat": 44.43556,
+            "lon": 26.10112,
+            "desc": "Cea mai buna școală militară din România."
+        },
+        {
+            "name": "Şcoala Militară De Maiştri Şi Subofiţeri a Forţelor Terestre Basarab I",
+            "rank": "Top 3 școli militare",
+            "url": "http://www.ncoacademy.ro/",
+            "img": "https://epitesti.ro/wp-content/uploads/2024/10/scoala-de-ofiteri.jpg",
+            "lat": 47.16222,
+            "lon": 27.58889,
+            "desc": "Școală militară destinată forțelor terestre."
+        }
+    ],
+    "Polițist": [
+        {
+            "name": "Academia de Poliție Alexandru Ioan Cuza",
+            "rank": "Top 1 academie de poliție în România",
+            "url": "https://academiadepolitie.ro/",
+            "img": "https://academiadepolitie.ro/storage/2021/11/cladire_academiadepolitie_outside-700x660.jpg",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Cea mai bună academie de poliție din România."
+        },
+        {
+            "name": "Școala de Agenți de Poliție Vasile Lascăr Câmpina",
+            "rank": "Top 2 școli de poliție",
+            "url": "https://www.scoalapolitie.ro/",
+            "img": "https://gazarul.ro/wp-content/uploads/2024/04/scoala-agenti.jpg",
+            "lat": 44.43556,
+            "lon": 26.10112,
+            "desc": "Cea mai buna școală de poliție din România."
+        },
+        {
+            "name": "Şcoala de Agenţi de poliţie Septimiu Mureşan",
+            "rank": "Top 3 școli de poliție",
+            "url": "https://www.scoalapolcj.ro/",
+            "img": "https://politiaromana.ro/files/pages/big_scoala_cluj1.jpg",
+            "lat": 47.16222,
+            "lon": 27.58889,
+            "desc": "Școala de poliție situată în Cluj-Napoca."
+        }
+    ],
     "Artist": [
         {
             "name": "Universitatea Națională de Arte București",
@@ -623,6 +681,26 @@ career_top_faculties = {
             "lat": 47.16222,
             "lon": 27.58889,
             "desc": "Programe de macroeconomie și politici economice, centre de analize economice."
+        }
+    ],
+    "Politician": [
+        {
+            "name": "Școala Naţională de Studii Politice și Administrative",
+            "rank": "Top 1 Facultăți de Studii Politice în România",
+            "url": "https://snspa.ro/",
+            "img": "https://studyinromania.gov.ro/resource-c-1078-1200x720-iwh-cladire-snspa-5.jpg",
+            "lat": 44.44750,
+            "lon": 26.09670,
+            "desc": "Lider în studii politice și administrative."
+        },
+        {
+            "name": "Facultatea de Științe Politice, Administrative și ale Comunicării",
+            "rank": "Top 2 Economie în România",
+            "url": "https://www.ubbcluj.ro",
+            "img": "https://www.clujazi.ro/wp-content/uploads/FSPAC.jpg",
+            "lat": 46.76767,
+            "lon": 23.59137,
+            "desc": "Facultate de științe politice și administrative, situată în Cluj."
         }
     ],
     # Poți continua pentru restul carierelor (Antreprenor, Psiholog, Veterinar, Arhitect, Farmacist, Contabil, Scriitor, Designer, Analist de date, Politician) în același format.
