@@ -838,8 +838,7 @@ if submit:
                 download_lines.append(f"  {j}. {stp}")
             download_lines.append("")
         st.download_button(
-            "Descarcă recomandările", data="
-    ".join(download_lines), file_name="recomandari.txt", mime="text/plain"
+            "Descarcă recomandările", data="\n".join(download_lines), file_name="recomandari.txt", mime="text/plain"
         )
     else:
         st.markdown("**Nu s-au găsit recomandări** pe baza datelor introduse. Încearcă alte combinații de opțiuni!", unsafe_allow_html=True)
