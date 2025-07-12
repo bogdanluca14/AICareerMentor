@@ -767,141 +767,90 @@ if submit:
 
     # Afișează recomandările dacă există
     if suggestions:
-        st.markdown("## 🔍 Iată recomandările Mentorului AI:")
-        # Definim iconițe pentru cariere (emoji relevante)
+        st.markdown("## 🔍 Mentorul AI ți-a recomandat următoarele cariere. Alege din dropdown și vezi detalii!", unsafe_allow_html=True)
+        # Iconițe pentru fiecare carieră
         career_icons = {
             "Programator": "🚀", "Medic": "🩺", "Inginer": "⚙️", "Profesor": "📚", "Cercetător": "🔬",
             "Artist": "🎨", "Muzician": "🎵", "Avocat": "⚖️", "Jurnalist": "📰", "Economist": "💼",
             "Antreprenor": "💡", "Psiholog": "🧠", "Veterinar": "🐾", "Arhitect": "📐", "Farmacist": "💊",
             "Contabil": "📊", "Scriitor": "✒️", "Designer": "🎨", "Analist de date": "📈", "Politician": "🏛️"
         }
-        for career_name in suggestions:
-            info = career_data[career_name]
-            title = info["title"]
-            reason = info["reason"]
-            # Personalizează motivul dacă utilizatorul are anumite materii relevante
-            if info["subjects"]:
-                common_subj = [s for s in favorite_subjects if s in info["subjects"]]
-                if common_subj:
-                    if career_name == "Medic":
-                        reason = "îți pasă de oameni și ești pasionat de biologie și chimie"
-                    elif career_name == "Programator":
-                        if "Informatică" in common_subj and "Matematică" in common_subj:
-                            reason = "ai înclinație pentru matematică și informatică"
-                        elif "Informatică" in common_subj:
-                            reason = "ai pasiune pentru informatică și gândire logică"
-                        elif "Matematică" in common_subj:
-                            reason = "ai gândire logică, dovadă fiind aptitudinea la matematică"
-                    elif career_name == "Avocat":
-                        if "Istorie" in common_subj:
-                            reason = "cunoștințele tale de istorie și cultura generală te vor ajuta în domeniul juridic"
-                        elif "Limba și literatura română" in common_subj:
-                            reason = "stăpânești limba română, esențială pentru argumentarea juridică"
-                    elif career_name == "Arhitect" and {"Matematică", "Arte"} <= set(common_subj):
-                        reason = "combini talentul artistic cu logica matematică - exact ce trebuie pentru arhitectură"
-            steps = info["steps"]
-            icon = career_icons.get(career_name, "🖋️")
-            # Afișează cariera cu imagine și text alăturat
-            col1, col2 = st.columns([1, 3])
-            #with col1:
-            #    if career_name in career_images:
-            #        st.image(career_images[career_name], caption=career_name, width=200)
-            st.markdown(f"**{icon} {title}** — {reason}")
-            steps_markdown = "\n".join([f"{idx}. {step}" for idx, step in enumerate(steps, 1)])
-            st.markdown(steps_markdown)
-            # iterăm facultățile din career_top_faculties
-            st.markdown(f"### 🎓 Facultăți de top pentru {career_name} 📚")
-            for fac in career_top_faculties.get(career_name, []):
-                # Creăm două coloane: prima pentru imagine, a doua pentru text
-                col_img, col_text = st.columns([1, 4])
-                with col_img:
-                    # folosim HTML direct pentru a ne asigura că src e pus corect
-                    st.markdown(
-                        f"<img src='{fac['img']}' height='120' style='border-radius:8px;'/>",
-                        unsafe_allow_html=True
-                    )
-                with col_text:
-                    st.markdown(
-                        f"**[{fac['name']}]({fac['url']})**  \n\n"
-                        f"{fac['rank']}  \n\n"
-                        f"{fac['desc']}"
-                    )
-            st.markdown("---")
 
-        # Mesaj de încurajare personalizat (sfat AI) cu variante
-        advice_lines = []
-        advice_lines.append("Crede în tine!")
-        if len(favorite_subjects) >= 2:
-            subj1, subj2 = favorite_subjects[0], favorite_subjects[1]
-            advice_lines.append(f"Faptul că îți plac atât **{subj1}** cât și **{subj2}** îți oferă o perspectivă unică.")
-        elif len(favorite_subjects) == 1:
-            subj = favorite_subjects[0]
-            advice_lines.append(f"Pasiunea ta pentru **{subj}** este un atu important.")
-        # Sinergii speciale între arte și științe
-        if "Arte" in favorite_subjects and set(favorite_subjects) & {"Matematică", "Informatică", "Fizică", "Chimie", "Biologie"}:
-            advice_lines.append("Inspirația din arte îți poate aduce un plus de creativitate în domeniul tehnic.")
-        # Mențiuni despre creativitate și empatie dacă sunt foarte pronunțate
-        if people_level >= 8 and creativity_level >= 8:
-            advice_lines.append("Ai atât empatie, cât și creativitate – calități rare care te vor purta spre succes.")
-        else:
-            if people_level >= 8:
-                advice_lines.append("Empatia și dorința ta de a-i ajuta pe alții te vor ghida către o carieră de succes.")
-            if creativity_level >= 8:
-                advice_lines.append("Creativitatea ta îți va da puterea să găsești soluții originale în tot ceea ce faci.")
-        advice_lines.append("Nu uita, ești la început de drum: continuă să înveți și să crești, iar succesul nu va întârzia să apară!")
-        # Varianta 1: mesaj complet
-        message1 = " ".join(advice_lines)
-        # Varianta 2: mesaj alternativ
-        message2_lines = []
-        message2_lines.append("Crede în tine!")
-        if len(favorite_subjects) >= 2:
-            subj1, subj2 = favorite_subjects[0], favorite_subjects[1]
-            message2_lines.append(f"Dacă îți plac atât {subj1} cât și {subj2}, înseamnă că ai perspective multiple în viață.")
-        elif len(favorite_subjects) == 1:
-            subj = favorite_subjects[0]
-            message2_lines.append(f"Pasiunea ta pentru {subj} îți va fi un ghid de nădejde în carieră.")
-        if people_level >= 8 and creativity_level >= 8:
-            message2_lines.append("În plus, combinația de empatie și creativitate îți oferă un avantaj unic.")
-        elif people_level >= 8:
-            message2_lines.append("Empatia ta față de ceilalți este remarcabilă și te va diferenția.")
-        elif creativity_level >= 8:
-            message2_lines.append("Creativitatea ta te va ajuta să găsești soluții originale la provocări.")
-        message2_lines.append("Mergi înainte cu încredere și perseverență, iar succesul te așteaptă!")
-        message2 = " ".join(message2_lines)
-        # Varianta 3: mesaj alternativ
-        message3_lines = []
-        if len(favorite_subjects) >= 2:
-            subj1, subj2 = favorite_subjects[0], favorite_subjects[1]
-            message3_lines.append(f"Pasiunea ta pentru {subj1} și {subj2} îți oferă un avantaj pe care puțini îl au.")
-        elif len(favorite_subjects) == 1:
-            subj = favorite_subjects[0]
-            message3_lines.append(f"Pasiunea ta pentru {subj} va fi motorul reușitei tale.")
-        if people_level >= 8 and creativity_level >= 8:
-            message3_lines.append("Faptul că ești atât empatic(ă) cât și creativ(ă) te va diferenția în orice domeniu.")
-        else:
-            if people_level >= 8:
-                message3_lines.append("Empatia ta deosebită te va ghida către o carieră împlinită.")
-            if creativity_level >= 8:
-                message3_lines.append("Creativitatea ta este un atu de preț în drumul spre succes.")
-        message3_lines.append("Ai tot ce îți trebuie pentru a reuși - continuă să înveți și vei ajunge departe!")
-        message3 = " ".join(message3_lines)
-        # Alege una dintre variante în mod aleatoriu
-        advice_options = [message1, message2, message3]
-        advice_message = random.choice(advice_options)
-        st.markdown(f"<div style='background-color: rgba(76, 175, 80, 0.1); padding: 15px; border-radius: 5px;'>💬 <b>Sfat AI personalizat:</b> {advice_message}</div>", unsafe_allow_html=True)
-        # Oferă opțiunea de a descărca recomandările ca fișier text
-        download_lines = []
-        for career_name in suggestions:
-            info = career_data[career_name]
-            title = info["title"]
-            reason = info["reason"]
-            steps = info["steps"]
-            download_lines.append(f"{title} - {reason}")
-            for idx, step in enumerate(steps, 1):
-                download_lines.append(f"    {idx}. {step}")
-            download_lines.append("")  # linie goală între recomandări
-        download_lines.append("Mult succes în carieră!")
-        download_content = "\n".join(download_lines)
-        st.download_button("Descarcă recomandările", data=download_content, file_name="recomandari.txt", mime="text/plain")
+        # Dropdown cu primele 5 cariere recomandate
+        top5 = suggestions[:5]
+        selected = st.selectbox(
+            "Selectează un job pentru detalii:",
+            options=top5,
+            index=0,
+            help="Alege unul dintre primele 5 joburi recomandate"
+        )
+
+        # Coloane pentru afișare side-by-side a primelor 2 expandere
+        cols = st.columns(2)
+        for idx, career_name in enumerate(top5[:2]):
+            with cols[idx]:
+                info = career_data[career_name]
+                icon = career_icons.get(career_name, "🖋️")
+                # Expander care se deschide doar dacă e selectat
+                with st.expander(f"{icon} {info['title']}", expanded=(career_name == selected)):
+                    # Motiv de potrivire
+                    reason = info['reason']
+                    # Personalizări suplimentare de motiv
+                    if info.get('subjects'):
+                        common = set(favorite_subjects) & set(info['subjects'])
+                        if common:
+                            if career_name == "Programator":
+                                reason = "ai pasiune pentru informatică și gândire logică"
+                            elif career_name == "Medic":
+                                reason = "îți pasă de oameni și ești atras de științele vieții"
+                    st.markdown(f"**De ce ți se potrivește:** {reason.capitalize()}.")
+
+                    # Pași concreți
+                    st.markdown("**Pași concreți pentru a ajunge aici:**")
+                    for i, step in enumerate(info['steps'], 1):
+                        st.markdown(f"{i}. {step}")
+
+                    # Facultăți de top
+                    st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
+                    for fac in career_top_faculties.get(career_name, []):
+                        ci, ct = st.columns([1, 4])
+                        with ci:
+                            st.image(fac['img'], width=100)
+                        with ct:
+                            st.markdown(
+                                f"**[{fac['name']}]({fac['url']})**  \n"
+                                f"Loc: {fac['rank']}  \n"
+                                f"{fac['desc']}"
+                            )
+                    st.markdown("---")
+
+        # Sfat AI variabil
+        advice_pool = []
+        advice_pool.append("Crede în tine! Continuă să înveți și vei reuși.")
+        if favorite_subjects:
+            sbj = ", ".join(favorite_subjects[:2])
+            advice_pool.append(f"Pasiunea ta pentru {sbj} îți oferă un avantaj unic.")
+        if people_level >= 8:
+            advice_pool.append("Empatia ta te va ajuta să fii un profesionist de încredere.")
+        if creativity_level >= 8:
+            advice_pool.append("Creativitatea ta te va diferenția în orice domeniu.")
+        advice = random.choice(advice_pool)
+        st.markdown(
+            f"<div style='background-color: #e8f5e9; padding: 12px; border-radius: 8px;'>💬 <b>Sfat AI:</b> {advice}</div>",
+            unsafe_allow_html=True
+        )
+
+        # Buton de descărcare recomandări
+        dl = []
+        for career_name in top5:
+            inf = career_data[career_name]
+            dl.append(f"{inf['title']} - {inf['reason']}")
+            for j, stp in enumerate(inf['steps'], 1):
+                dl.append(f"  {j}. {stp}")
+            dl.append("")
+        st.download_button(
+            "Descarcă recomandările", data="\n".join(dl), file_name="recomandari.txt", mime="text/plain"
+        )
     else:
-        st.write("Nu s-au găsit recomandări pe baza datelor introduse. Încearcă alte combinații de opțiuni.")
+        st.write("Nu s-au găsit recomandări pe baza datelor introduse. Încearcă alte combinații de opțiuni!")
+
