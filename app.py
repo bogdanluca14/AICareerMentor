@@ -31,7 +31,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Titlu și instrucțiuni de utilizare
 st.markdown("# 🎓 Mentor Carieră AI")
-st.markdown("_Completează, alege domeniul, apoi apasă **Vezi recomandări AI**")
+st.markdown("_Completează formularul scurt, alege domeniul, apoi apasă **Vezi recomandări AI**_")
 
 # Lista de materii posibile
 subjects_list = ["Matematică", "Informatică", "Fizică", "Chimie", "Biologie",
@@ -731,7 +731,7 @@ study_years = {
 
 # Formular de introducere a datelor utilizatorului
 with st.form("input_form"):
-    favorite_subjects = st.multiselect("Materii favorite:", options=subjects_list)
+    favorite_subjects = st.multiselect("Materii favorite (de preferat cel puțin două):", options=subjects_list)
     work_mode = st.radio("Preferi să lucrezi:", ["Individual", "În echipă", "Ambele"], index=2)
     creativity_level = st.slider("Creativitate (0-10):", 0, 10, 5)
     people_level = st.slider("Dorința de a ajuta oamenii (0-10):", 0, 10, 5)
