@@ -17,10 +17,8 @@ from streamlit.components.v1 import html
 import random
 import requests
 
-# Configurare pagină (titlu, iconiță, layout)
 st.set_page_config(page_title="Mentor Carieră AI", page_icon="🎓", layout="wide")
 
-# Ascundere elemente implicite Streamlit (meniu și footer)
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
@@ -29,22 +27,18 @@ footer {visibility: hidden;}
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-# Titlu și instrucțiuni de utilizare
 st.markdown("# 🎓 Mentor Carieră AI")
 st.markdown("_Completează formularul, alege domeniul, apoi apasă **Vezi recomandări AI**_")
 
-# Lista de materii posibile
 subjects_list = ["Matematică", "Informatică", "Fizică", "Chimie", "Biologie",
                  "Limba și literatura română", "Istorie", "Geografie",
                  "Economie", "Arte"]
 
-# Lista de cariere posibile
 careers_list = ["Programator", "Medic", "Inginer", "Profesor", "Cercetător", "Militar",
                 "Artist", "Muzician", "Jurist", "Jurnalist", "Economist", "Polițist",
                 "Antreprenor", "Psiholog", "Veterinar", "Arhitect", "Farmacist",
                 "Contabil", "Scriitor", "Designer", "Analist de date", "Politician"]
 
-# Definirea caracteristicilor fiecărei cariere
 career_data = {
     "Programator": {
         "subjects": ["Matematică", "Informatică", "Fizică"],
@@ -711,7 +705,7 @@ career_top_faculties = {
             "img": "https://tb.ziareromania.ro/Te-pregatesti-sa-devii-student--Alege-Academia-de-Studii-Economice-din-Bucuresti-/049d556023050afc7a/400/225/2/100/Te-pregatesti-sa-devii-student--Alege-Academia-de-Studii-Economice-din-Bucuresti-.jpg",
             "lat": 44.44750,
             "lon": 26.09670,
-            "desc": "Una dintre cele mai mari și specializate universități de economie și business, cu centre pentru startup-uri și cursuri dedicate antreprenoriatului."  # :contentReference[oaicite:6]{index=6}
+            "desc": "Una dintre cele mai mari și specializate universități de economie și business, cu centre pentru startup-uri și cursuri dedicate antreprenoriatului."
         },
         {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca - Facultatea de Științe Economice și Gestiunea Afacerilor",
@@ -720,7 +714,7 @@ career_top_faculties = {
             "img": "https://www.ubbcluj.ro/images/picture_istoric_fsega_.jpg",
             "lat": 46.76767,
             "lon": 23.59137,
-            "desc": "Renumită pentru curriculele de business moderne, laboratoare de simulare și competiții de antreprenoriat."  # :contentReference[oaicite:7]{index=7}
+            "desc": "Renumită pentru curriculele de business moderne, laboratoare de simulare și competiții de antreprenoriat."
         },
         {
             "name": "Universitatea Alexandru Ioan Cuza Iași - Facultatea de Economie și Administrarea Afacerilor",
@@ -729,7 +723,7 @@ career_top_faculties = {
             "img": "https://www.feaa.uaic.ro/wp-content/uploads/2023/05/FEAA-Corp-B.jpg",
             "lat": 47.16222,
             "lon": 27.58889,
-            "desc": "Cunoscută pentru cercetarea în macroeconomie și politici economice, conferințe internaționale și proiecte de colaborare cu instituții europene."  # :contentReference[oaicite:8]{index=8}
+            "desc": "Cunoscută pentru cercetarea în macroeconomie și politici economice, conferințe internaționale și proiecte de colaborare cu instituții europene."
         }
     ],
     "Psiholog": [
@@ -740,7 +734,7 @@ career_top_faculties = {
             "img": "https://fpse.unibuc.ro/wp-content/uploads/2023/01/12094730_1482304882073084_3162350211045692050_o-624x243.jpg",
             "lat": 44.43556,
             "lon": 26.10112,
-            "desc": "Formare pedagogică și psihopedagogie, psihologie clinică și organizațională."  # :contentReference[oaicite:3]{index=3}
+            "desc": "Formare pedagogică și psihopedagogie, psihologie clinică și organizațională."
         },
         {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca Facultatea de Psihologie și Științele Educației",
@@ -749,7 +743,7 @@ career_top_faculties = {
             "img": "https://psiedu.ubbcluj.ro/data/uploads/poze/biblioteca.jpg",
             "lat": 46.76767,
             "lon": 23.59137,
-            "desc": "Programe de consiliere psihologică, psihologie socială și educațională."  # :contentReference[oaicite:4]{index=4}
+            "desc": "Programe de consiliere psihologică, psihologie socială și educațională."
         },
         {
             "name": "Universitatea de Vest Timișoara Facultatea de Sociologie și Psihologie",
@@ -758,7 +752,7 @@ career_top_faculties = {
             "img": "https://www.timisoreni.ro/upload/photo/2012-03/universitatea_de_vest_timisoara_2_large.jpg",
             "lat": 45.74712,
             "lon": 21.23151,
-            "desc": "Psihologie clinică, organizațională și educațională, centre de practică pentru studenți."  # 
+            "desc": "Psihologie clinică, organizațională și educațională, centre de practică pentru studenți."
         }
     ],
     "Veterinar": [
@@ -769,7 +763,7 @@ career_top_faculties = {
             "img": "https://i0.wp.com/cluju.ro/wp-content/uploads/2022/05/USAMV-Cluj.jpg",
             "lat": 46.76670,
             "lon": 23.56670,
-            "desc": "Pionier în educație veterinară, centre de cercetare și clinici veterinare universitare."  # :contentReference[oaicite:6]{index=6}
+            "desc": "Pionier în educație veterinară, centre de cercetare și clinici veterinare universitare."
         },
         {
             "name": "Universitatea de Științe Agricole și Medicină Veterinară București (USAMV)",
@@ -778,7 +772,7 @@ career_top_faculties = {
             "img": "https://usamv.ro/wp-content/uploads/2022/11/univ.jpg",
             "lat": 44.43930,
             "lon": 26.05000,
-            "desc": "Campus modern și programe de specializare în sănătatea animalelor de companie."  # :contentReference[oaicite:7]{index=7}
+            "desc": "Campus modern și programe de specializare în sănătatea animalelor de companie."
         },
         {
             "name": "Universitatea de Științe Agricole și Medicină Veterinară a Banatului Timișoara",
@@ -787,7 +781,7 @@ career_top_faculties = {
             "img": "https://www.revistafermierului.ro/media/k2/items/cache/6c1295254c1fd77b0bf5c280d7c50593_XL.jpg",
             "lat": 45.73762,
             "lon": 21.22724,
-            "desc": "Programe de medicină veterinară cu accent pe boli și chirurgie animală."  # :contentReference[oaicite:8]{index=8}
+            "desc": "Programe de medicină veterinară cu accent pe boli și chirurgie animală."
         }
     ],
     "Arhitect": [
@@ -798,7 +792,7 @@ career_top_faculties = {
             "img": "https://upload.wikimedia.org/wikipedia/commons/2/22/Fac_ahitectura_Ion_Mincu.jpg",
             "lat": 44.43890,
             "lon": 26.09610,
-            "desc": "Program de elită în design arhitectural și urbanism."  # :contentReference[oaicite:9]{index=9}
+            "desc": "Program de elită în design arhitectural și urbanism."
         },
         {
             "name": "Universitatea Politehnica Timișoara Facultatea de Arhitectură și Urbanism",
@@ -807,7 +801,7 @@ career_top_faculties = {
             "img": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Facultatea_de_Constructi-Arhitectura_Timisoara_2.jpg",
             "lat": 45.75396,
             "lon": 21.22561,
-            "desc": "Excelență în proiectare urbană și tehnici moderne de construcție."  # 
+            "desc": "Excelență în proiectare urbană și tehnici moderne de construcție."
         },
         {
             "name": "Universitatea Tehnică din Cluj-Napoca Facultatea de Arhitectură și Urbanism Joseph Köteles",
@@ -816,7 +810,7 @@ career_top_faculties = {
             "img": "https://clujtravel.com/wp-content/uploads/2010/09/utcn-cluj.png",
             "lat": 46.76920,
             "lon": 23.58550,
-            "desc": "Program cu focus pe dezvoltare durabilă și restaurare arhitecturală."  # 
+            "desc": "Program cu focus pe dezvoltare durabilă și restaurare arhitecturală."
         }
     ],
     "Farmacist": [
@@ -827,7 +821,7 @@ career_top_faculties = {
             "img": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Fosta_Facultate_de_Medicina_azi_Universitatea_de_Medicina_si_Farmacie%2C_Bd._Eroii_Sanitari_nr._8%2C_sect._5%2C_Bucuresti.JPG",
             "lat": 44.43528,
             "lon": 26.07000,
-            "desc": "Tradiție în formare farmaceutică, cercetare în biofarmacie și farmacologie."  # 
+            "desc": "Tradiție în formare farmaceutică, cercetare în biofarmacie și farmacologie."
         },
         {
             "name": "Universitatea de Medicină și Farmacie Grigore T. Popa Iași",
@@ -836,7 +830,7 @@ career_top_faculties = {
             "img": "https://culturainiasi.ro/wp-content/uploads/2017/06/Universitatea-de-Medicin%C4%83-%C8%99i-Farmacie-Grigore-T.-Popa-Ia%C8%99i.jpg",
             "lat": 47.16015,
             "lon": 27.59581,
-            "desc": "Programe de formare farmacologică și cercetare clinico-farmaceutică."  # 
+            "desc": "Programe de formare farmacologică și cercetare clinico-farmaceutică."
         },
         {
             "name": "Universitatea de Medicină și Farmacie Iuliu Hațieganu Cluj-Napoca",
@@ -845,7 +839,7 @@ career_top_faculties = {
             "img": "https://cdn.umfcluj.ro/uploads/2021/10/umfih-07.jpg",
             "lat": 46.76206,
             "lon": 23.58360,
-            "desc": "Cercetare avansată în biochimie și farmacologie experimentală."  # 
+            "desc": "Cercetare avansată în biochimie și farmacologie experimentală."
         }
     ],
     "Contabil": [
@@ -856,7 +850,7 @@ career_top_faculties = {
             "img": "https://www.economistul.ro/wp-content/uploads/2024/10/ASE_Piata-Romana-resize.jpg",
             "lat": 44.44750,
             "lon": 26.09670,
-            "desc": "Programe acreditate CECCAR, pregătire în audit și fiscalitate."  # :contentReference[oaicite:15]{index=15}
+            "desc": "Programe acreditate CECCAR, pregătire în audit și fiscalitate."
         },
         {
             "name": "Universitatea Alexandru Ioan Cuza Iași Economie și Business (Contabilitate)",
@@ -865,7 +859,7 @@ career_top_faculties = {
             "img": "https://keystoneacademic-res.cloudinary.com/image/upload/c_fill,w_3840,h_1645,g_auto/dpr_auto/f_auto/q_auto/v1/element/12/125533_coversize.jpg",
             "lat": 47.16222,
             "lon": 27.58889,
-            "desc": "Specializări în contabilitate financiară și management financiar."  # :contentReference[oaicite:16]{index=16}
+            "desc": "Specializări în contabilitate financiară și management financiar."
         },
         {
             "name": "Universitatea de Vest Timișoara Facultatea de Socio-Umane (Contabilitate)",
@@ -874,7 +868,7 @@ career_top_faculties = {
             "img": "https://uvt.ro/wp-content/uploads/2020/10/UVT-2-2.jpg",
             "lat": 45.74712,
             "lon": 21.23151,
-            "desc": "Curriculum axat pe audit, fiscalitate și ERP în contabilitate."  # 
+            "desc": "Curriculum axat pe audit, fiscalitate și ERP în contabilitate."
         }
     ],
     "Scriitor": [
@@ -885,7 +879,7 @@ career_top_faculties = {
             "img": "https://cdn.edupedu.ro/wp-content/uploads/2020/06/Unibuc.jpg",
             "lat": 44.43556,
             "lon": 26.10112,
-            "desc": "Profiluri în filologie, scriere creativă și literatură comparată."  # :contentReference[oaicite:18]{index=18}
+            "desc": "Profiluri în filologie, scriere creativă și literatură comparată."
         },
         {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca Facultatea de Litere",
@@ -894,7 +888,7 @@ career_top_faculties = {
             "img": "https://visitcluj.ro/wp-content/uploads/2021/05/Universitatea-Babes-Bolyai-UBB-PMC16609_.jpg",
             "lat": 46.76767,
             "lon": 23.59137,
-            "desc": "Domenii de studiu: literatură, comunicare, jurnalism literar."  # :contentReference[oaicite:19]{index=19}
+            "desc": "Domenii de studiu: literatură, comunicare, jurnalism literar."
         },
         {
             "name": "Universitatea Alexandru Ioan Cuza Iași Facultatea de Litere",
@@ -903,7 +897,7 @@ career_top_faculties = {
             "img": "https://culturainiasi.ro/wp-content/uploads/2017/06/Facultatea-de-Litere.jpg",
             "lat": 47.16222,
             "lon": 27.58889,
-            "desc": "Programe avansate în literatură și scriere creativă."  # :contentReference[oaicite:20]{index=20}
+            "desc": "Programe avansate în literatură și scriere creativă."
         }
     ],
     "Designer": [
@@ -914,7 +908,7 @@ career_top_faculties = {
             "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/UNARTE_Bucaresti_14.jpg/960px-UNARTE_Bucaresti_14.jpg",
             "lat": 44.44720,
             "lon": 26.09830,
-            "desc": "Programe de design grafic, design de produs și arte vizuale."  # 
+            "desc": "Programe de design grafic, design de produs și arte vizuale."
         },
         {
             "name": "Universitatea de Artă și Design Cluj-Napoca",
@@ -923,7 +917,7 @@ career_top_faculties = {
             "img": "https://www.uad.ro/Public/Images/01%20DESPRE%20NOI/01%20Despre%20noi/UAD_fatada.jpg",
             "lat": 46.76960,
             "lon": 23.58300,
-            "desc": "Excelență în design vestimentar, design de produs și media digitală."  # 
+            "desc": "Excelență în design vestimentar, design de produs și media digitală."
         },
         {
             "name": "Universitatea de Vest Timișoara Facultatea de Arte și Design",
@@ -932,7 +926,7 @@ career_top_faculties = {
             "img": "https://admitere.uvt.ro/wp-content/uploads/listing-uploads/cover/2022/05/08b.jpg",
             "lat": 45.74712,
             "lon": 21.23151,
-            "desc": "Programe interdisciplinare de multimedia, design grafic și arte digitale."  # 
+            "desc": "Programe interdisciplinare de multimedia, design grafic și arte digitale."
         }
     ],
     "Analist de date": [
@@ -943,7 +937,7 @@ career_top_faculties = {
             "img": "https://upb.ro/wp-content/uploads/2018/04/precis-upb.jpg",
             "lat": 44.43833,
             "lon": 26.05139,
-            "desc": "Specializări în inteligență artificială, big data și machine learning."  # 
+            "desc": "Specializări în inteligență artificială, big data și machine learning."
         },
         {
             "name": "Universitatea Babeș-Bolyai Cluj-Napoca Facultatea de Matematică și Informatică",
@@ -952,7 +946,7 @@ career_top_faculties = {
             "img": "https://ssmr.ro/files/newsletter/news7/UBB1.png",
             "lat": 46.76767,
             "lon": 23.59137,
-            "desc": "Cursuri avansate de analiză de date, statistică și data mining."  # :contentReference[oaicite:25]{index=25}
+            "desc": "Cursuri avansate de analiză de date, statistică și data mining."
         },
         {
             "name": "Universitatea Tehnică din Cluj-Napoca Facultatea ETTI",
@@ -961,21 +955,13 @@ career_top_faculties = {
             "img": "https://www.utcluj.ro/media/faculties/7/inginerie-electrica.jpg.1280x720_q85_crop-smart.jpg",
             "lat": 46.76920,
             "lon": 23.58550,
-            "desc": "Programe de calcul paralel, big data și machine learning aplicat."  # 
+            "desc": "Programe de calcul paralel, big data și machine learning aplicat."
         }
     ]
 }
 
-
-# După ce ai definit acest dict, în locul actualizării hărții
-# folosește `career_top_faculties[sugested_career]` pentru a plasa
-# marker-e cu imagine și link în popup.
-
-
-# Imagini reprezentative pentru unele cariere (dacă disponibile)
 career_images = {
     # "Programator": "https://upload.wikimedia.org/wikipedia/commons/d/da/Software_developer_at_work_02.jpg",
-    # (Se pot adăuga imagini pentru restul carierelor dacă sunt disponibile)
 }
 
 # Durata studiilor necesare (ani, aproximativ) pentru unele cariere
