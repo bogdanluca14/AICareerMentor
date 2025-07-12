@@ -818,7 +818,7 @@ if submit:
         advice = random.choice(advice_pool)
         st.markdown(
             f"<div style='background-color:#e8f5e9;padding:16px;border-radius:10px;margin-top:12px;'>"
-            f"<span style='font-size:1.1em;'><b>💬 Sfat AI:</b> {advice}</span>"
+            f"<span style='font-size:1.1em; color:#1e3a8a;'><b>💬 Sfat AI:</b> {advice}</span>"
             f"</div>",
             unsafe_allow_html=True
         )
