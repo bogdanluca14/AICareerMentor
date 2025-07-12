@@ -793,7 +793,7 @@ if submit:
                     st.markdown(f"{i}. {step}")
                 # Facultăți top
                 facultati = career_top_faculties.get(career_name, [])
-                if len(Facultati) > 0: st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
+                if len(facultati) > 0: st.markdown(f"**🎓 Top facultăți recomandate pentru {info['title']}:**")
                 for fac in facultati:
                     ci, ct = st.columns([1, 4])
                     with ci:
