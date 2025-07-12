@@ -782,7 +782,7 @@ if submit:
         for career_name in top5:
             info = career_data[career_name]
             icon = career_icons.get(career_name, "🖋️")
-            exp = st.expander(f"{icon} {info['title']}", expanded=false)
+            exp = st.expander(f"{icon} {info['title']}", expanded=False)
             with exp:
                 # Motiv de potrivire
                 reason = info['reason'].capitalize()
